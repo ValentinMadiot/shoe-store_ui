@@ -137,7 +137,6 @@ img {
   background-color: var(--dark-color-lighten);
 }
 
-/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -425,13 +424,13 @@ img {
   display: inline-flex;
   color: var(--dark-color);
   font-weight: var(--font-bold);
-  align-items: center;
+  align-items: end;
 }
 
-.button-icon::before {
+.button-icon {
+  transition: 0.3s;
   font-size: 1.5rem;
   margin-left: var(--mb-1);
-  transition: 0.3s;
 }
 
 .button-light:hover .button-icon {
@@ -553,6 +552,10 @@ img {
 }
 
 /*=============== WOMEN SNEAKERS ===============*/
+.women__container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
 /*=============== OFFER ===============*/
 
