@@ -64,7 +64,6 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--dark-color-lighten);
   color: var(--dark-color);
   line-height: 1.6;
 }
@@ -212,6 +211,7 @@ img {
 .home__container {
   padding-block: 0.5rem 2.5rem;
   row-gap: 1.5rem;
+  background-color: var(--dark-color-lighten);
 }
 
 .home__data {
@@ -439,10 +439,6 @@ img {
 }
 
 /*=============== FEATURED ===============*/
-.featured {
-  background-color: var(--white-color);
-}
-
 .featured__container {
   row-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -517,6 +513,44 @@ img {
 }
 
 /*=============== COLLECTION ===============*/
+.collection__container {
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.collection__card {
+  position: relative;
+  display: flex;
+  height: 328px;
+  background-color: var(--dark-color-lighten);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.collection__card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.collection__data {
+  align-self: flex-end;
+}
+
+.collection__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+}
+
+.collection__name {
+  font-size: var(--bigger-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.collection__description {
+  margin-bottom: var(--mb-2);
+}
 
 /*=============== WOMEN SNEAKERS ===============*/
 
