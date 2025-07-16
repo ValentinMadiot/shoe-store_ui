@@ -10,10 +10,8 @@
   --first-color: hsl(33, 90%, 65%);
   --second-color: hsl(355, 90%, 55%);
   --third-color: hsl(198, 90%, 65%);
-  --title-color: hsl(0, 0%, 12%);
-  --text-color: hsl(0, 0%, 56%);
-
-  --dark-color: #141414;
+  --dark-color: #101010;
+  --dark-color-hover: #333333;
   --dark-color-light: #8a8a8a;
   --dark-color-lighten: #f2f2f2;
   --white-color: #fff;
@@ -244,7 +242,7 @@ img {
   align-items: center;
   column-gap: 0.5rem;
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: var(--dark-color);
 }
 
 .home__button i {
@@ -342,8 +340,12 @@ img {
 }
 
 .home__social-link {
-  color: var(--title-color);
-  font-size: 1.35rem;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+}
+
+.home__social-link:hover {
+  color: var(--dark-color-hover);
 }
 
 .home__controls {
@@ -419,6 +421,7 @@ img {
 
 .button:hover {
   transform: translateY(-0.25rem);
+  background-color: var(--dark-color-hover);
 }
 
 .button-light {
@@ -695,5 +698,46 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer__container {
+  /* display: inline ; */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer__box {
+  margin-bottom: var(--mb-4);
+}
+
+.footer__title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.footer__link {
+  display: block;
+  width: max-content;
+  margin-bottom: var(--mb-1);
+  color: var(--dark-color);
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--dark-color-hover);
+}
+
+.footer__social {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+}
+
+.footer__social:hover {
+  color: var(--dark-color-hover);
+}
+
+.footer__copy {
+  padding-top: 3rem;
+  font-size: var(--smaller-font-size);
+  color: var(--dark-color-light);
+  text-align: center;
+}
 
 /* =============== BREAKPOINTS ===============*/
