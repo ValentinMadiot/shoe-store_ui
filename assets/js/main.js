@@ -52,3 +52,34 @@ window.onscroll = () => {
   if (this.scrollY >= 200) nav.classList.add("scroll-header");
   else nav.classList.remove("scroll-header");
 };
+
+/*=============== SWIPER SNEAKERS ===============*/
+let swiperImages = new Swiper(".home__swiper", {
+  loop: true,
+  spaceBetween: 64,
+  grabCursor: true,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    // clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+let swiperTitles = new Swiper(".home__titles", {
+  loop: true,
+  spaceBetween: 64,
+  grabCursor: true,
+  centeredSlides: true,
+});
+
+swiperImages.controller.control = swiperTitles;
+swiperTitles.controller.control = swiperImages;

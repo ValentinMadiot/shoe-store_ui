@@ -10,13 +10,19 @@
       href="assets/img/favicon.png"
       type="image/x-icon" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
     <!--=============== BOX ICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Magasin de Sneakers</title>
   </head>
@@ -58,7 +64,130 @@
 
     <main>
       <!--=============== HOME ===============-->
-      <section class="home" id="home"></section>
+      <section class="home" id="home">
+        <div class="home__container">
+          <div class="home__data">
+            <h3 class="home__subtitle">NOUVEAUTÉS</h3>
+            <div thumbsSlider="" class="home__titles swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1 class="home__title">
+                    Yeezy Boost <br />
+                    350 V2 Clay
+                  </h1>
+                </div>
+
+                <div class="swiper-slide">
+                  <h1 class="home__title">
+                    Air Jordan 1<br />
+                    Red & Black
+                  </h1>
+                </div>
+
+                <div class="swiper-slide">
+                  <h1 class="home__title">
+                    Air Mag <br />
+                    3000 X1 Future
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="home__button"
+              >Acheter <i class="bx bx-arrow-right-stroke"></i>
+            </a>
+          </div>
+
+          <div class="home__images">
+            <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home__article swiper-slide">
+                  <div class="home__card">
+                    <div class="home__circle home__circle-1"></div>
+                    <img
+                      src="assets/img/sneaker-1.png"
+                      alt="sneaker 1"
+                      class="home__img-1" />
+                    <img
+                      src="assets/img/sneaker-2.png"
+                      alt="sneaker 2"
+                      class="home__img-2" />
+                  </div>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <div class="home__card">
+                    <div class="home__circle home__circle-2"></div>
+                    <img
+                      src="assets/img/sneaker-3.png"
+                      alt="sneaker 3"
+                      class="home__img-1 home__sneaker-3" />
+                    <img
+                      src="assets/img/sneaker-4.png"
+                      alt="sneaker 4"
+                      class="home__img-2 home__sneaker-4" />
+                  </div>
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <div class="home__card">
+                    <div class="home__circle home__circle-3"></div>
+                    <img
+                      src="assets/img/sneaker-5.png"
+                      alt="sneaker 5"
+                      class="home__img-1 home__sneaker-5" />
+                    <img
+                      src="assets/img/sneaker-6.png"
+                      alt="sneaker 6"
+                      class="home__img-2 home__sneaker-6" />
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <footer class="home__footer">
+            <div class="home__controls">
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Navigation Buttons -->
+              <div class="home__navigation">
+                <div class="swiper-button-prev">
+                  <i class="bx bx-arrow-left-stroke"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                  <i class="bx bx-arrow-right-stroke"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="home__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-link">
+                <i class="bx bxl-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link">
+                <i class="bx bxl-instagram"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="home__social-link">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </section>
 
       <!--=============== FEATURED ===============-->
       <section class="featured section" id="featured"></section>
@@ -81,6 +210,9 @@
 
     <!--=============== FOOTER ===============-->
     <footer class="footer section"></footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
